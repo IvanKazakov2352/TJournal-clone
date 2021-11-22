@@ -1,0 +1,51 @@
+module.exports = {
+  posts: [
+    {
+      id: "1",
+      name: 'О здоровье',
+      description: 'Про вредность прививки',
+      tags: ['Здоровье', 'Прививка'],
+      likes: 0,
+      views: 0,
+      comments: [],
+    },
+    {
+      id: "2",
+      name: 'Рок концерт',
+      description: 'Rammshtain снова вернулись на сцену',
+      image:
+        '',
+      tags: ['Рок', 'Тяжелый металл'],
+      likes: 0,
+      views: 0,
+      comments: [],
+    },
+    {
+      id: "3",
+      name: 'Фотосессия',
+      description: 'Как фотографироваться на хорошую камеру?',
+      tags: ['Фотографии', 'Фото'],
+      likes: 0,
+      views: 0,
+      comments: [],
+    },
+    {
+      id: "4",
+      name: 'Красивая осень',
+      description: 'Как вы относитесь к осени?',
+      tags: ['Осень', 'Осенний лес'],
+      likes: 0,
+      views: 0,
+      comments: [],
+    },
+    {
+      id: "5",
+      name: 'Новый IPhone 12 Pro Max',
+      description: 'Apple презентовали новый IPhone 12 Pro Max',
+      tags: ['IPhone', 'Apple'],
+      likes: 0,
+      views: 0,
+      comments: [],
+    },
+  ],
+}

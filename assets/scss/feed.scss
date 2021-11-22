@@ -1,0 +1,88 @@
+.posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 630px;
+
+  .posts__item {
+    width: 650px;
+    min-height: 250px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin: 15px 15px 15px 15px;
+
+    .posts__item-title {
+      margin: 20px 20px 20px 20px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+    }
+    .posts__item-description {
+      margin: 20px 20px 20px 20px;
+    }
+    .description {
+      max-width: 700px;
+      word-break: break-all;
+    }
+    .posts__item-image {
+      max-width: 70%;
+      margin: 0 auto;
+
+      .image {
+        display: block;
+        transform: translateX(-50%);
+        margin-left: 50%;
+        max-width: 62vh;
+        border-radius: 20px;
+
+        @media screen and (max-width: 814px) {
+          & {
+            max-width: 45vh;
+          }
+        }
+      }
+    }
+    .posts__item-like {
+      position: relative;
+      right: 20px;
+      top: 13px;
+      font-size: 18px;
+    }
+    .posts__item-icons {
+      display: flex;
+      justify-content: space-between;
+
+      .posts__item-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin: 20px;
+        transition: 2s;
+
+        &:hover {
+          background-color: rgb(207, 207, 207);
+          transition: 2s;
+          cursor: pointer;
+        }
+      }
+
+      .icon {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    @media screen and (max-width: 814px) {
+      & {
+        width: 450px;
+      }
+    }
+  }
+  @media screen and (max-width: 814px) {
+    & {
+      width: 460px;
+    }
+  }
+}

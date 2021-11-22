@@ -1,0 +1,111 @@
+.sidebar {
+  width: 250px;
+  height: 100%;
+  background-color: rgb(241, 241, 241);
+  position: sticky;
+  border-radius: 10px;
+  top: 65px;
+  left: 0;
+  z-index: 10;
+
+  .sidebar__links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+    .sidebar__links-link {
+      margin: 8px;
+      width: 230px;
+      height: 50px;
+      border-radius: 15px;
+
+      .sidebar__links-image {
+        width: 40px;
+        height: 40px;
+
+        .link-image {
+          width: 40px;
+          height: 40px;
+          margin: 4px 8px 4px 8px;
+        }
+      }
+
+      .sidebar__links-text {
+        font-size: 20px;
+        margin-top: -30px;
+        text-align: center;
+      }
+
+      &:hover {
+        background-color: rgb(255, 255, 255);
+        cursor: pointer;
+      }
+    }
+    .sidebar__links-button {
+      display: none;
+      border: 0;
+      outline: none;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      width: 150px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      font-weight: 620;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      transition: 1s;
+
+      &:hover {
+        background-color: #fcff44;
+        transition: 1s;
+      }
+
+      @media screen and (max-width: 814px) {
+        & {
+          display: block;
+        }
+      }
+    }
+    .sidebar__links-input {
+      margin-left: 10px;
+      width: 300px;
+      height: 45px;
+      padding-left: 20px;
+      padding-bottom: 5px;
+      font: inherit;
+      line-height: 1;
+      background-color: rgba(202, 202, 202, 0.486);
+      border: 0;
+      outline: none;
+      box-sizing: border-box;
+      border-radius: 20px;
+      transition: 0.5s;
+      margin-left: 70px;
+
+      &:hover {
+        background-color: rgb(255, 255, 255);
+        border: 2px solid #ffcc7a;
+        transition: 0.5s;
+      }
+
+      @media screen and (max-width: 814px) {
+        & {
+          display: flex;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    & {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 814px) {
+    & {
+      width: 500px;
+    }
+  }
+}
