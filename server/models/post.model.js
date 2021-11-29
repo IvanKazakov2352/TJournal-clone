@@ -12,6 +12,7 @@ const userSchema = new Schema({
   comments: {
     type: Array,
     default: [],
+    ref: "Comment"
   },
   views: {
     type: Number,
@@ -23,4 +24,4 @@ const userSchema = new Schema({
   },
 })
 
-export default model('user', userSchema)
+export default model('Post', userSchema)
